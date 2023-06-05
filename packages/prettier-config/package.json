@@ -1,0 +1,9 @@
+{
+  "name": "@wtx/prettier-config",
+  "version": "1.0.0",
+  "description": "WTX Prettier Config",
+  "main": "index.json",
+  "repository": "git@github.com:wtx/prettier-config/",
+  "author": "Wicklow Tiger",
+  "license": "MIT"
+}
