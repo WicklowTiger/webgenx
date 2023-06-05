@@ -1,7 +1,9 @@
-# logger
+# Logger
 
-This library was generated with [Nx](https://nx.dev).
+Logger library with possibility to change logger function.
 
-## Building
+## Usage
 
-Run `nx build logger` to build the library.
+* Use log, warn, error functions to log messages.
+* Use setLogger function to change logger function. (can be changed to any custom function)
+* Use @monitor decorator to log function calls, results and execution time.
