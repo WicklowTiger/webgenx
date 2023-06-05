@@ -1,9 +1,19 @@
 {
-  "name": "@wtx/prettier-config",
-  "version": "1.0.0",
-  "description": "WTX Prettier Config",
-  "main": "index.json",
-  "repository": "git@github.com:wtx/prettier-config/",
-  "author": "Wicklow Tiger",
-  "license": "MIT"
+	"name": "@webgenx/prettier-config",
+	"version": "1.0.0",
+	"description": "WEBGENX Prettier Config",
+	"main": "index.json",
+	"repository": {
+		"type": "git",
+		"url": "git+ssh://git@github.com/webgenx/prettier-config.git"
+	},
+	"author": "Wicklow Tiger",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/webgenx/prettier-config/issues"
+	},
+	"homepage": "https://github.com/webgenx/prettier-config#readme",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	}
 }

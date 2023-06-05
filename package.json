@@ -1,25 +1,28 @@
 {
-  "name": "wtx",
-  "version": "0.0.0",
-  "license": "MIT",
-  "scripts": {},
-  "private": true,
-  "devDependencies": {
-    "@nx/eslint-plugin": "16.3.2",
-    "@nx/js": "16.3.2",
-    "@nx/linter": "16.3.2",
-    "@types/node": "18.7.1",
-    "@typescript-eslint/eslint-plugin": "^5.58.0",
-    "@typescript-eslint/parser": "^5.58.0",
-    "eslint": "~8.15.0",
-    "eslint-config-prettier": "8.1.0",
-    "nx": "16.3.2",
-    "nx-cloud": "latest",
-    "prettier": "^2.6.2",
-    "typescript": "~5.0.2"
-  },
-  "workspaces": [
-    "packages/*"
-  ],
-  "dependencies": {}
+	"name": "webgenx",
+	"version": "0.0.0",
+	"license": "MIT",
+	"scripts": {
+		"prettier": "prettier --write ."
+	},
+	"private": true,
+	"prettier": "@webgenx/prettier-config",
+	"devDependencies": {
+		"@nx/eslint-plugin": "16.3.2",
+		"@nx/js": "16.3.2",
+		"@nx/linter": "16.3.2",
+		"@types/node": "18.7.1",
+		"@typescript-eslint/eslint-plugin": "^5.58.0",
+		"@typescript-eslint/parser": "^5.58.0",
+		"@webgenx/prettier-config": "^1.0.0",
+		"eslint": "~8.15.0",
+		"eslint-config-prettier": "8.1.0",
+		"nx": "16.3.2",
+		"nx-cloud": "latest",
+		"prettier": "^2.6.2",
+		"typescript": "~5.0.2"
+	},
+	"workspaces": [
+		"packages/*"
+	]
 }

@@ -1,16 +1,18 @@
-# Prettier configuration 
+# Prettier configuration
 
 # Usage:
+
 **Install**:
+
 ```bash
-$ npm install --save-dev @wtx/prettier-config
+$ npm install --save-dev @webgenx/prettier-config
 ```
 
 **Edit `package.json`**:
 
 ```jsonc
 {
-  // ...
-  "prettier": "@wtx/prettier-config"
+	// ...
+	"prettier": "@webgenx/prettier-config"
 }
 ```
