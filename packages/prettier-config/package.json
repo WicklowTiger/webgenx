@@ -1,18 +1,18 @@
 {
 	"name": "@webgenx/prettier-config",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "WEBGENX Prettier Config",
 	"main": "index.json",
 	"repository": {
 		"type": "git",
-		"url": "git+ssh://git@github.com/webgenx/prettier-config.git"
+		"url": "git+https://github.com/WicklowTiger/webgenx.git#main"
 	},
 	"author": "Wicklow Tiger",
 	"license": "MIT",
 	"bugs": {
-		"url": "https://github.com/webgenx/prettier-config/issues"
+		"url": "https://github.com/WicklowTiger/webgenx/issues"
 	},
-	"homepage": "https://github.com/webgenx/prettier-config#readme",
+	"homepage": "git+https://github.com/WicklowTiger/webgenx#readme",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1"
 	}
