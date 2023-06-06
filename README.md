@@ -1,5 +1,8 @@
 # Webgenx
 
-## Generate libs
+Utils for web development.
 
-- nx g @nx/js:lib my-lib
+## Available Packages
+
+- prettier-config
+- logger
