@@ -1,9 +1,38 @@
 # Logger
 
 Logger library with possibility to change logger function.
+By default, logger function is console.log / warn / error.
 
 ## Usage
 
-* Use log, warn, error functions to log messages.
-* Use setLogger function to change logger function. (can be changed to any custom function)
-* Use @monitor decorator to log function calls, results and execution time.
+```typescript
+
+import { log, warn, error, setLoggerFN } from '@webgenx/logger'
+
+log('log message') // will call loggerFN('log message', LogLevel.INFO)
+
+warn('warn message') // will call loggerFN('warn message', LogLevel.WARN)
+
+error('error message') // will call loggerFN('error message', LogLevel.ERROR)
+
+setLoggerFN((logString: string, logLevel: LogLevel) => {
+    dbClient.post('/log', { logString, logLevel })
+})
+
+```
+
+```typescript
+
+import { monitor } from '@webgenx/logger'
+
+class MyClass {
+    @monitor
+    myMethod(a: number, b: number): number {
+        return a + b
+    }
+}
+
+const myClass = new MyClass()
+myClass.myMethod(1, 2) // will call loggerFN(`Call: myMethod(1, 2) => 3 (<duration>ms)`, LogLevel.MONITOR)
+
+```

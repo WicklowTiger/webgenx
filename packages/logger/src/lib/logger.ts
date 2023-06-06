@@ -22,6 +22,10 @@ export let _loggerFN: (logString: string, logLevel: LogLevel) => void = (logStri
 	}
 }
 
+/**
+ * Set the logger function. Example: (logString: string, logLevel: LogLevel) => dbClient.post('/log', { logString, logLevel })
+ * @param logger: (logString: string, logLevel: LogLevel) => void
+ */
 export function setLoggerFN(logger: (logString: string, logLevel: LogLevel) => void) {
 	_loggerFN = logger
 }
@@ -37,5 +41,3 @@ export function warn(...data: any[]) {
 export function error(...data: any[]) {
 	_loggerFN(JSON.stringify(data, null, 4), LogLevel.ERROR)
 }
-
-export const print = log
