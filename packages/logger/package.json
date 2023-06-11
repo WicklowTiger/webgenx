@@ -1,6 +1,6 @@
 {
   "name": "@webgenx/logger",
-  "version": "0.0.4",
+  "version": "0.0.6",
   "type": "commonjs",
   "description": "Logger library with possibility to change logger function.",
   "main": "index.js",

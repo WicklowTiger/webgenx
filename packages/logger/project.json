@@ -1,7 +1,7 @@
 {
 	"name": "logger",
 	"$schema": "../../node_modules/nx/schemas/project-schema.json",
-	"sourceRoot": "packages/logger/src/",
+	"sourceRoot": "packages/logger",
 	"projectType": "library",
 	"targets": {
 		"build": {
@@ -9,7 +9,7 @@
 			"outputs": ["{options.outputPath}"],
 			"options": {
 				"outputPath": "dist/packages/logger",
-				"main": "packages/logger/src/index.ts",
+				"main": "packages/logger/index.ts",
 				"tsConfig": "packages/logger/tsconfig.lib.json",
 				"assets": ["packages/logger/*.md"]
 			}
